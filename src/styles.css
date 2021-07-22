@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+.navbar {
+  margin: 50px 0 0 40px;
+}
+a {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+s {
+  text-decoration-color: red;
+}
+.btn {
+  border-style: none;
+  font-size: 15px;
+  background-color: orangered;
+  color: white;
+  border-radius: 25px;
+  margin-top: 50px;
+  padding: 15px 50px;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: orangered;
+  background-color: white;
+  border: 1px solid orangered;
+}
+.components {
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  margin: 120px 0 0 100px;
+}
+.content2 {
+  display: flex;
+}
+.h1 {
+  font-size: 60px;
+}
+.p {
+  margin: 0 0 0 120px;
+  color: grey;
+  font-weight: bold;
+  text-align: left;
+}
+.p::after {
+  content: "";
+  background: orangered;
+  display: block;
+  height: 3px;
+  width: 30%;
+  margin-top: 25px;
+}
+.fooditems {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+}
+img {
+  border-radius: 50%;
+}
+.cb,
+.mb,
+.grill,
+.tandoori,
+.bbq {
+  margin: 0 20px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.cb:hover,
+.mb:hover,
+.grill:hover,
+.tandoori:hover,
+.bbq:hover {
+  transform: scale(1.2);
+}
+.content .cb.shadow {
+  box-shadow: 0 20px 30px rgba(2, 0, 0, 0.212);
+}
+.content .cb.shadow:hover {
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+.content .mb.shadow {
+  box-shadow: 0 20px 30px rgba(2, 0, 0, 0.212);
+}
+.content .mb.shadow:hover {
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+.content .grill.shadow {
+  box-shadow: 0 20px 30px rgba(2, 0, 0, 0.212);
+}
+.content .grill.shadow:hover {
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+.content .tandoori.shadow {
+  box-shadow: 0 20px 30px rgba(2, 0, 0, 0.212);
+}
+.content .tandoori.shadow:hover {
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+.content .bbq.shadow {
+  box-shadow: 0 20px 30px rgba(2, 0, 0, 0.212);
+}
+.content .bbq.shadow:hover {
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+p {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.checkbtn {
+  font-size: 30px;
+  color: orangered;
+  line-height: 80px;
+  margin-right: 10px;
+  margin-left: -20px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+#check1 {
+  display: none;
+}
+@media (max-width: 450px) {
+  .btn {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
+  .content,
+  .content2,
+  .h1,
+  .p,
+  .fooditems {
+    display: block;
+    margin: 100px 0 0 -85px;
+    padding: 0 0 0 0;
+  }
+  .logo {
+    font-size: 10px;
+  }
+  .fooditems {
+    margin: 50px 0 0 -140px;
+    width: 150%;
+  }
+  img {
+    margin: 0 0 0 25px;
+    height: 70px;
+    width: 80px;
+  }
+  h1.logo {
+    margin: 0 50px;
+    font-size: 25px;
+  }
+  .h1 {
+    font-size: 40px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: orangered;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: white;
+  }
+  a.hover,
+  a.active {
+    background: white;
+    color: orangered;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
